@@ -173,7 +173,7 @@ footer{border-top:1px solid var(--line);padding:35px 0;margin-top:auto}
           </div>
           <label class="terms">
             <input type="checkbox" id="terms" required>
-            <span>I have read and agree to the <a href="/beta-terms" target="_blank" rel="noopener">PatchFlow Beta Terms of Use</a>, including confidentiality requirements.</span>
+            <span>I have read and agree to the <a href="#" id="terms-link" onclick="openTerms(); return false;">PatchFlow Beta Terms of Use</a>, including confidentiality requirements.</span>
           </label>
           <button type="submit" class="button full" id="submit-btn">Request beta access →</button>
         </form>
@@ -188,6 +188,47 @@ footer{border-top:1px solid var(--line);padding:35px 0;margin-top:auto}
     </div>
   </section>
 </main>
+
+<div id="terms-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:9999; overflow-y:auto; padding:24px 16px;">
+  <div style="max-width:600px; margin:40px auto; background:#111318; border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:32px;">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px;">
+      <h2 style="font-size:18px; font-weight:700; color:#F0EEE9; margin:0;">PatchFlow Beta Terms of Use</h2>
+      <button type="button" onclick="closeTerms()" style="background:none; border:none; color:#64748b; font-size:24px; cursor:pointer; padding:0; line-height:1;">×</button>
+    </div>
+    <p style="font-size:11px; color:#64748b; margin-bottom:24px;">Effective date: September 2026</p>
+
+    <div style="font-size:14px; line-height:1.7; color:#94a3b8;">
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">1. What the beta is</h3>
+      <p style="margin:0 0 20px;">PatchFlow is early-access software under active development. Features may change, break, or be removed without notice. The beta is provided free of charge in exchange for your feedback and patience.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">2. Confidentiality</h3>
+      <p style="margin:0 0 20px;">You agree to keep unreleased features, screenshots, and product details confidential. Do not share PatchFlow's interface, features, or documentation publicly without written permission from PatchFlow. This includes social media, blog posts, podcasts, and conversations with competitors.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">3. No competing use</h3>
+      <p style="margin:0 0 20px;">You agree not to use your access to PatchFlow to build, design, or inform a competing product or service.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">4. Your data</h3>
+      <p style="margin:0 0 20px;">You own your data. PatchFlow will not sell or share your production documentation with third parties. During the beta period your data may be subject to loss or corruption — maintain your own backups of critical information.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">5. Access</h3>
+      <p style="margin:0 0 20px;">PatchFlow may grant, revoke, or limit your beta access at any time and for any reason. Violation of these terms will result in immediate access revocation.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">6. No warranty</h3>
+      <p style="margin:0 0 20px;">The beta is provided as-is. PatchFlow makes no guarantees about uptime, data integrity, or fitness for any particular purpose.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">7. Feedback</h3>
+      <p style="margin:0 0 20px;">Any feedback you provide may be used to improve PatchFlow without compensation or attribution.</p>
+
+      <h3 style="color:#F0EEE9; font-size:14px; margin:0 0 8px;">8. Contact</h3>
+      <p style="margin:0 0 20px;">Questions about these terms: stephen@patchflow.io</p>
+    </div>
+
+    <button type="button" onclick="closeTerms()" style="width:100%; margin-top:8px; background:#2563eb; border:none; border-radius:10px; padding:12px; font-size:14px; font-weight:600; color:#fff; cursor:pointer;">
+      Close
+    </button>
+  </div>
+</div>
+
 <footer>
   <div class="wrap footer-inner">
     <a class="brand" href="/">
@@ -200,6 +241,21 @@ footer{border-top:1px solid var(--line);padding:35px 0;margin-top:auto}
   </div>
 </footer>
 <script>
+function openTerms() {
+  document.getElementById('terms-modal').style.display = 'block'
+  document.body.style.overflow = 'hidden'
+}
+function closeTerms() {
+  document.getElementById('terms-modal').style.display = 'none'
+  document.body.style.overflow = ''
+}
+document.getElementById('terms-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeTerms()
+})
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeTerms()
+})
+
 const SUPABASE_URL = 'https://mwlkwhjychrnidohhatx.supabase.co'
 const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im13bGt3aGp5Y2hybmlkb2hoYXR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU4NTk2NjQsImV4cCI6MjA5MTQzNTY2NH0.VJwwo7QeUjk0rAeQxWIOT0gFFoLZEPMVphEVP3FvtiQ'
 
