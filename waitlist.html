@@ -161,14 +161,25 @@ footer{border-top:1px solid var(--line);padding:35px 0;margin-top:auto}
           <div class="field">
             <label for="role">Role <span class="hint">(optional)</span></label>
             <select id="role" name="role">
-              <option value="">Select a role</option>
-              <option>Technical Director</option>
-              <option>Production Director</option>
-              <option>Audio Engineer</option>
-              <option>Lighting Director</option>
-              <option>Video Director</option>
-              <option>Volunteer</option>
-              <option>Other</option>
+              <option value="">Select your role...</option>
+              <optgroup label="Church">
+                <option value="Technical Director">Technical Director</option>
+                <option value="Production Director">Production Director</option>
+                <option value="Audio Engineer">Audio Engineer</option>
+                <option value="Lighting Director">Lighting Director</option>
+                <option value="Video Director">Video Director</option>
+                <option value="Volunteer">Volunteer</option>
+              </optgroup>
+              <optgroup label="Touring & Events">
+                <option value="FOH Engineer">FOH Engineer</option>
+                <option value="Production Manager">Production Manager</option>
+                <option value="Tour Manager">Tour Manager</option>
+                <option value="LD">Lighting Designer</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="Production Company">Production Company Owner</option>
+                <option value="Other">Other</option>
+              </optgroup>
             </select>
           </div>
           <label class="terms">
