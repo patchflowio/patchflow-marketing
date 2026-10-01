@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08090d">
+<meta name="description" content="PatchFlow help center. Search guides for audio, lighting, stage, network, and service change tracking.">
+<meta property="og:title" content="PatchFlow — Help">
+<meta property="og:description" content="Search PatchFlow guides for setting up your patch, tracking changes, and getting your team ready for Sunday.">
+<meta property="og:type" content="website">
+<title>PatchFlow — Help</title>
+<link rel="icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuMzkgMTc1LjM5Ij4KICA8ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzNiODJmNjt9PC9zdHlsZT48L2RlZnM+CiAgPGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj4KICAgIDxnPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDguNjksNjAuNThjLS4wOC0uMDEtLjE2LS4wMS0uMjMtLjAyLTUuMjEtLjA2LTM0LjQ5LjAzLTQyLjk5LjAxLS4wNSwwLS4xLDAtLjE0LDAtLjk0LjA0LTEuNy43OS0xLjc2LDEuNzMsMCwuMDQsMCwuMDksMCwuMTN2NTEuNDVjMCwxLjAzLjg0LDEuODYsMS44NywxLjg2aDIwLjQxYy45MiwwLDEuNjktLjY4LDEuODItMS41NmgwYy0uMDItLjEtLjAzLS4yLS4wMy0uM3YtMjcuNTljMC0xLjAzLjgzLTEuODYsMS44Ni0xLjg2aDE1LjkyYy4wNywwLC4xNC4wMi4yMS4wMSw2Ljk4LS4yMywxMy4zMy00Ljk0LDEzLjM0LTEyLjA1LDAtNi4wMy00LjQ3LTExLjAxLTEwLjI5LTExLjgxWiIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNDguNzEsMEgyNi42OEMxMS45NSwwLDAsMTEuOTUsMCwyNi42OHYxMjIuMDNjMCwxNC43NCwxMS45NSwyNi42OCwyNi42OCwyNi42OGgxMjIuMDNjMTQuNzQsMCwyNi42OC0xMS45NSwyNi42OC0yNi42OFYyNi42OGMwLTE0Ljc0LTExLjk1LTI2LjY4LTI2LjY4LTI2LjY4Wk0xMTEuMzUsMTE1LjczYy0uMjQsMC0uNDgsMC0uNzIsMGgtMjEuMTRjLTEuMDIsMC0xLjg0LjgzLTEuODQsMS44NHYyNy44MmMwLDEuMDMtLjg0LDEuODYtMS44NywxLjg2aC0yMS45N2MtMTcuNTEsMC0zMS45NC0xNC4wNi0zMS45NC0zMS40N3YtLjA1czAtNTMuMzEsMC01My4zMWMwLTEuMDMuODQtMS44NiwxLjg3LTEuODZoMjguMDNjMS4wMiwwLDEuODQtLjgzLDEuODQtMS44NHYtMjcuODJjMC0xLjAzLjgzLTEuODYsMS44Ni0xLjg2aDQ1LjE1Yy4yNCwwLC40OCwwLC43MiwwLDIzLjYxLjM5LDQyLjYyLDE5LjY0LDQyLjYyLDQzLjM0cy0xOS4wMiw0Mi45Ni00Mi42Miw0My4zNFoiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: dark;
+  /* Tokens copied from index.html. */
+  --bg: #08090d;
+  --surface: #101218;
+  --surface2: #14171f;
+  --surface3: #1a1d26;
+  --border: #1c1f2e;
+  --border2: #252a38;
+  --border3: #3a3e4b;
+  --border-subtle: rgba(255, 255, 255, 0.055);
+  --text: #e2e8f4;
+  --text-bright: #f0eee9;
+  --text-secondary: #94a3b8;
+  --muted: #64748b;
+  --overlay-soft: rgba(255, 255, 255, 0.04);
+  --overlay-medium: rgba(255, 255, 255, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --surface-glass: rgba(16, 18, 24, 0.82);
+  --accent: #2563eb;
+  --accent2: #3b81f6;
+  --accent-hover: #3b82f6;
+  --accent-bright: #93c5fd;
+  --accent-tint: rgba(59, 129, 246, 0.08);
+  --accent-tint3: rgba(59, 129, 246, 0.2);
+  --on-accent: #ffffff;
+  --audio: #3b81f6;
+  --lighting: #a855f7;
+  --video: #f97316;
+  --teal: #14b8a6;
+  --amber: #f59e0b;
+  --green2: #22c55e;
+  --line: var(--border2);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}::selection{background:var(--accent);color:var(--on-accent)}[hidden]{display:none!important}
+.wrap{width:min(1160px,calc(100% - 64px));margin:auto}
+header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--border-subtle);background:var(--surface-glass);backdrop-filter:blur(20px)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:10px}
+.product-logo{display:block;width:158px;height:auto}.footer-inner .product-logo{width:134px}
+.navlinks{display:flex;align-items:center;gap:30px;color:var(--text-secondary);font-size:14px}.navlinks a:hover,.navlinks a[aria-current]{color:white}
+.button{display:inline-flex;justify-content:center;align-items:center;gap:16px;min-height:50px;padding:14px 25px;border-radius:99px;font-size:15px;font-weight:600;background:var(--accent);color:var(--on-accent);transition:background .2s,transform .2s}.button:hover{background:var(--accent-hover);transform:translateY(-2px)}.button.small{padding:10px 19px;min-height:40px;font-size:14px}
+.nav-arrow{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--accent2);margin:0 0 24px}
+
+/* Hero + search */
+.help-hero{text-align:center;padding:96px 0 72px;background:radial-gradient(ellipse at 50% 0%,var(--accent-tint3),transparent 62%)}
+.help-hero h1{font-size:clamp(44px,6vw,72px);line-height:1.04;letter-spacing:-.06em;font-weight:650;margin:0 0 20px;color:var(--text-bright)}
+.help-hero .intro{max-width:520px;font-size:18px;line-height:1.65;color:var(--text-secondary);margin:0 auto 36px}
+.search-bar{position:relative;width:100%;max-width:600px;margin:0 auto}
+.search-icon{position:absolute;left:22px;top:50%;width:20px;height:20px;transform:translateY(-50%);fill:none;stroke:var(--text-secondary);stroke-width:2;stroke-linecap:round;pointer-events:none}
+.search-bar input{width:100%;height:62px;padding:0 60px 0 56px;border:1px solid var(--border2);border-radius:99px;background:var(--surface2);color:var(--text);font:inherit;font-size:17px;outline:none;box-shadow:var(--shadow-md);transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.search-bar input::placeholder{color:var(--muted)}
+.search-bar input::-webkit-search-cancel-button,.search-bar input::-webkit-search-decoration{-webkit-appearance:none;appearance:none}
+.search-bar input:focus{border-color:var(--accent2);box-shadow:var(--shadow-md),0 0 0 4px var(--accent-tint3)}
+.clear-search{display:none;position:absolute;right:12px;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;border-radius:99px;background:var(--overlay-medium);color:var(--text-secondary);font-size:22px;line-height:1;cursor:pointer;transition:background .2s,color .2s}
+.clear-search:hover,.clear-search:focus-visible{background:var(--border3);color:white;outline:none}
+
+/* Sections + cards */
+.help-content{padding:8px 0 110px}
+.help-content:not(:has(.help-section:not([hidden]))){padding-bottom:0}
+.help-section{padding-top:44px;margin-top:44px;border-top:1px solid var(--border)}
+.help-section:first-child{margin-top:0;border-top:0;padding-top:0}
+.help-section h2{display:flex;align-items:center;gap:12px;font-size:22px;letter-spacing:-.5px;font-weight:650;margin:0 0 22px;color:var(--text-bright)}
+.help-section h2:before{content:"";width:8px;height:8px;border-radius:99px;background:var(--disc,var(--accent2));flex-shrink:0}
+.article-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.help-article{display:flex;flex-direction:column;background:var(--surface2);border:1px solid var(--border2);border-radius:18px;padding:26px 28px;transition:background .2s,border-color .2s,filter .2s}
+.help-article:hover{background:var(--surface3);border-color:var(--border3);filter:brightness(1.08)}
+.help-article h3{font-size:18px;line-height:1.3;letter-spacing:-.3px;font-weight:600;margin:0 0 10px;color:var(--text-bright)}
+.help-article p{font-size:15px;line-height:1.65;color:var(--text-secondary);margin:0 0 18px;flex:1}
+.read-more{align-self:flex-start;font-size:14px;font-weight:600;color:var(--accent-bright)}.read-more:hover{color:white}
+.help-article.contact-card{background:radial-gradient(ellipse at 100% 0%,var(--accent-tint3),transparent 70%),var(--surface2)}
+[data-section=getting-started]{--disc:var(--accent2)}[data-section=services]{--disc:var(--green2)}[data-section=audio]{--disc:var(--audio)}[data-section=lighting]{--disc:var(--lighting)}[data-section=stage]{--disc:var(--video)}[data-section=network]{--disc:var(--teal)}[data-section=equipment]{--disc:var(--amber)}[data-section=account]{--disc:var(--text-secondary)}
+
+/* No results */
+.no-results{text-align:center;padding:24px 0 120px}
+.no-results p{margin:0 0 8px;font-size:17px;line-height:1.6;color:var(--text-secondary)}
+.no-results p:first-child{font-size:22px;font-weight:600;letter-spacing:-.4px;color:var(--text-bright);margin-bottom:12px;overflow-wrap:anywhere}
+.no-results a{color:var(--accent-bright)}.no-results a:hover{color:white}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:35px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center}
+.footer-inner p{font-size:13px;color:var(--text-secondary);margin:0}.footer-inner p a{color:var(--accent-bright)}
+.footer-right{display:flex;align-items:center;gap:30px}
+.footer-links{display:flex;gap:30px}.footer-right .footer-links a{font-size:13px;color:var(--text-secondary)}.footer-right a:hover{color:var(--accent-bright)}
+
+@media(max-width:900px){.wrap{width:calc(100% - 44px)}.navlinks{gap:20px}.footer-right,.footer-links{gap:18px}.help-hero{padding-top:75px}}
+@media(max-width:640px){html{scroll-padding-top:80px}.wrap{width:calc(100% - 36px)}.nav{min-height:66px;gap:12px}.product-logo{width:140px}.navlinks{gap:0}.navlinks>a:not(.button){display:none}.button.small{padding:10px 15px;font-size:13px}.eyebrow{font-size:11px;letter-spacing:1.5px;margin-bottom:18px}.help-hero{padding:60px 0 48px}.help-hero h1{font-size:43px}.help-hero .intro{font-size:16px;margin-bottom:28px}.search-bar input{height:56px;font-size:16px;padding-left:50px}.search-icon{left:19px}.article-grid{grid-template-columns:1fr;gap:12px}.help-article{padding:22px}.help-section{padding-top:36px;margin-top:36px}.help-section h2{font-size:20px;margin-bottom:18px}.help-content{padding-bottom:80px}.footer-inner{align-items:flex-start;flex-wrap:wrap}.footer-right{width:100%;flex-wrap:wrap;justify-content:space-between;gap:12px}.footer-links{gap:18px}}
+@media(max-width:370px){.wrap{width:calc(100% - 28px)}.nav .product-logo{width:123px}.nav .button.small{font-size:12px;padding:10px 12px}.help-hero h1{font-size:38px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header><nav class="wrap nav" aria-label="Main navigation"><a href="/" class="brand" aria-label="PatchFlow home"><img class="product-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NjIuODggMTc1LjM5Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjM2I4MmY2OwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CiAgICA8Zz4KICAgICAgPGc+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzQ1Ljc1LDczLjE4YzAsMjQuNTEtMTYuNTYsNDAuMjYtNDIuMzcsNDAuMjZoLTMxdjMzLjI4aC0yMi40VjMzLjA4aDUzLjRjMjUuODEsMCw0Mi4zNywxNS43NSw0Mi4zNyw0MC4wOVpNMzIzLjE5LDczLjM0YzAtMTIuMTctOC4xMi0xOS45Ny0yMC43OC0xOS45N2gtMzAuMTl2MzkuOTNoMzAuMTljMTIuNjYsMCwyMC43OC03Ljc5LDIwLjc4LTE5Ljk3WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQyOC4zNyw2Ni41MnY4MC4xOWgtMTguNjdsLTEuNDYtOS43NGMtNi42Niw3LjQ3LTE2LjQsMTEuNTItMjcuNzYsMTEuNTItMjMuMDUsMC0zOC45Ni0xNy4yMS0zOC45Ni00MS44OHMxNS45MS00MS44OCwzOC45Ni00MS44OGMxMS4zNiwwLDIxLjI2LDQuMDYsMjcuNzYsMTEuMzZsMS40Ni05LjU4aDE4LjY3Wk00MDYuOTQsMTA2LjYyYzAtMTMuNDctOS4wOS0yMy4wNS0yMi4wOC0yMy4wNXMtMjEuOTEsOS41OC0yMS45MSwyMy4wNSw5LjA5LDIzLjA1LDIxLjkxLDIzLjA1LDIyLjA4LTkuNTgsMjIuMDgtMjMuMDVaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDkyLjk3LDE0My43OWMtNi42NiwzLjA4LTEyLjUsNC4yMi0xOS42NCw0LjIyLTE2LjM5LDAtMjcuMjctOC43Ni0yNy4yNy0yOS43MXYtMzQuMDloLTE0LjQ1di0xNy42OWgxNC40NXYtMjAuNDVsMjEuNDMtMi4yN3YyMi43M2gyMS41OXYxNy42OWgtMjEuNTl2MzQuMDljMCw3LjMsMy43MywxMS4wNCwxMC4yMywxMS4wNCwzLjA4LDAsNi44Mi0uOTcsOS41OC0yLjI3bDUuNjgsMTYuNzJaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDg4LjkxLDEwNi42MmMwLTI1LDE3LjM3LTQxLjg4LDQzLjE4LTQxLjg4LDExLjg1LDAsMjIuMjQsNC4yMiwzMC44NCwxMi41bC0xMi41LDEzLjQ3Yy00LjU1LTQuNTQtMTAuODgtNy4xNC0xNy41My03LjE0LTEzLjMxLDAtMjIuNTYsOS40MS0yMi41NiwyMy4wNXM5LjA5LDIzLjA1LDIyLjU2LDIzLjA1YzcuMTQsMCwxMy42NC0yLjc2LDE4LjUtNy43OWwxMi42NiwxMy42NGMtOS4wOSw4Ljc2LTE5LjMyLDEyLjk5LTMxLjY1LDEyLjk5LTI2LjQ2LDAtNDMuNS0xNi4zOS00My41LTQxLjg4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY0Ni4yLDEwMS45MXY0NC44aC0yMS41OXYtNDMuNWMwLTEyLjM0LTYuMzMtMTkuNDgtMTcuMDQtMTkuNDgtMTEuODUsMC0xOS44LDguNDQtMTkuOCwyMC43OHY0Mi4yaC0yMS41OVYzMy4wOGgyMS41OXY0Mi41M2M2LjE3LTYuOTgsMTQuNjEtMTAuNzEsMjUuMTYtMTAuNzEsMjAuNDUsMCwzMy4yOCwxNC40NSwzMy4yOCwzNy4wMVoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02NjYuOTcsNDQuOTN2NDEuODhoNjEuMnYxMS42OWgtNjEuMnY0OC4yMWgtMTIuNVYzMy4wOGg3Ny4xdjExLjg1aC02NC42WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTczOS44NSwzMy4wOGgxMi4wMXYxMTMuNjNoLTEyLjAxVjMzLjA4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc1OSwxMDYuNjJjMC0yMy44NiwxNi44OC00MS43Miw0MS44OC00MS43MnM0MS43MiwxNy44Niw0MS43Miw0MS43Mi0xNi43Miw0MS43Mi00MS43Miw0MS43Mi00MS44OC0xNy44Ni00MS44OC00MS43MlpNODMwLjU5LDEwNi42MmMwLTE3LjA0LTEyLjAxLTMwLjUyLTI5LjcxLTMwLjUycy0yOS44NywxMy40Ny0yOS44NywzMC41MiwxMi4wMSwzMC41MiwyOS44NywzMC41MiwyOS43MS0xMy40NywyOS43MS0zMC41MloiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05NjIuODgsNjYuNTJsLTI3LjExLDgwLjE5aC0xMy4xNWwtNy43OS0yMy4yMS0xNC4xMi0zOS42MS0xNC4xMiwzOS42MS03Ljk1LDIzLjIxaC0xMy4xNWwtMjcuMjctODAuMTloMTIuODJsMTAuMjMsMzEuODIsMTAuODgsMzQuNDEsMjMuMjEtNjYuMjNoMTAuNTVsMjMuMDUsNjYuMzksMTEuMDQtMzQuNTcsMTAuMjMtMzEuODJoMTIuNjZaIi8+CiAgICAgIDwvZz4KICAgICAgPGc+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ4LjcxLDBIMjYuNjhDMTEuOTUsMCwwLDExLjk1LDAsMjYuNjh2MTIyLjAzYzAsMTQuNzQsMTEuOTUsMjYuNjgsMjYuNjgsMjYuNjhoMTIyLjAzYzE0Ljc0LDAsMjYuNjgtMTEuOTUsMjYuNjgtMjYuNjhWMjYuNjhjMC0xNC43NC0xMS45NS0yNi42OC0yNi42OC0yNi42OFpNMTExLjM1LDExNS43M2MtLjI0LDAtLjQ4LDAtLjcyLDBoLTIxLjE0Yy0xLjAyLDAtMS44NC44My0xLjg0LDEuODR2MjcuODJjMCwxLjAzLS44NCwxLjg2LTEuODcsMS44NmgtMjEuOTdjLTE3LjUxLDAtMzEuOTQtMTQuMDYtMzEuOTQtMzEuNDd2LS4wNXMwLTUzLjMxLDAtNTMuMzFjMC0xLjAzLjg0LTEuODYsMS44Ny0xLjg2aDI4LjAzYzEuMDIsMCwxLjg0LS44MywxLjg0LTEuODR2LTI3LjgyYzAtMS4wMy44My0xLjg2LDEuODYtMS44Nmg0NS4xNWMuMjQsMCwuNDgsMCwuNzIsMCwyMy42MS4zOSw0Mi42MiwxOS42NCw0Mi42Miw0My4zNHMtMTkuMDIsNDIuOTYtNDIuNjIsNDMuMzRaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTA4LjY5LDYwLjU4Yy0uMDgtLjAxLS4xNi0uMDEtLjIzLS4wMi01LjIxLS4wNi0zNC40OS4wMy00Mi45OS4wMS0uMDUsMC0uMSwwLS4xNCwwLS45NC4wNC0xLjcuNzktMS43NiwxLjczLDAsLjA0LDAsLjA5LDAsLjEzdjUxLjQ1YzAsMS4wMy44NCwxLjg2LDEuODcsMS44NmgyMC40MWMuOTIsMCwxLjY5LS42OCwxLjgyLTEuNTZoMGMtLjAyLS4xLS4wMy0uMi0uMDMtLjN2LTI3LjU5YzAtMS4wMy44My0xLjg2LDEuODYtMS44NmgxNS45MmMuMDcsMCwuMTQuMDEuMjEuMDEsNi45OC0uMjMsMTMuMzMtNC45NCwxMy4zNC0xMi4wNSwwLTYuMDMtNC40Ny0xMS4wMS0xMC4yOS0xMS44MVoiLz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="PatchFlow" width="158" height="29"></a><div class="navlinks"><a href="/#how-it-works">How it works</a><a href="/#workspace">Features</a><a href="/help" aria-current="page">Help</a><a class="button small" href="/waitlist">Request access <svg class="nav-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M8 5h7v7"/></svg></a></div></nav></header>
+
+<div class="help-hero">
+  <div class="wrap">
+    <p class="eyebrow">Help center</p>
+    <h1>How can we help?</h1>
+    <p class="intro">Guides for setting up your patch, tracking what changes, and getting your team ready for Sunday.</p>
+    <div class="search-bar" role="search">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input type="search" placeholder="Search help articles..." id="help-search" aria-label="Search help articles" autocomplete="off" spellcheck="false">
+      <button type="button" class="clear-search" id="clear-search" aria-label="Clear search">×</button>
+    </div>
+  </div>
+</div>
+
+<main class="help-content wrap" id="main">
+  <section class="help-section" data-section="getting-started" id="getting-started">
+    <h2>Getting started</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Getting started with PatchFlow" data-tags="setup onboarding first time" data-content="organization venue service account create new">
+        <h3>Getting started with PatchFlow</h3>
+        <p>How to set up your organization, add your first venue, and create your first service.</p>
+        <a href="#getting-started" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Setting up your audio patch" data-tags="audio patch inputs channels" data-content="channel numbers snake assignments mic models microphone stage box">
+        <h3>Setting up your audio patch</h3>
+        <p>How to add inputs, set channel numbers, snake assignments, and mic models.</p>
+        <a href="#getting-started" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Inviting your team" data-tags="team invite roles" data-content="engineers viewers email members organization">
+        <h3>Inviting your team</h3>
+        <p>How to invite engineers and viewers to your organization.</p>
+        <a href="#getting-started" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Understanding roles" data-tags="roles permissions team" data-content="owner admin engineer viewer access">
+        <h3>Understanding roles</h3>
+        <p>Owner, Admin, Engineer, and Viewer — what each role can do.</p>
+        <a href="#getting-started" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="services" id="services">
+    <h2>Services and change tracking</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Creating a service" data-tags="service create template" data-content="new service scratch weekly event">
+        <h3>Creating a service</h3>
+        <p>How to create a new service from scratch or from a template.</p>
+        <a href="#services" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Understanding change tracking" data-tags="changes tracking normal setup" data-content="compare differences what changed master patch">
+        <h3>Understanding change tracking</h3>
+        <p>How PatchFlow compares each service against your normal setup and shows what’s different.</p>
+        <a href="#services" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="The service day view" data-tags="service day mobile Sunday volunteers" data-content="morning brief changes checks setup notes phone">
+        <h3>The service day view</h3>
+        <p>The mobile-friendly Sunday morning brief showing changes, checks, and setup notes.</p>
+        <a href="#services" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Sharing a service with your team" data-tags="share link volunteers read only" data-content="read-only access no account guest">
+        <h3>Sharing a service with your team</h3>
+        <p>How to generate a share link that gives read-only access to your full service without requiring an account.</p>
+        <a href="#services" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="audio" id="audio">
+    <h2>Audio</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Importing a patch sheet" data-tags="import PDF CSV patch sheet" data-content="upload existing spreadsheet file">
+        <h3>Importing a patch sheet</h3>
+        <p>How to import an existing patch sheet from a PDF or CSV file.</p>
+        <a href="#audio" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Audio labels and QR codes" data-tags="labels QR print snake" data-content="qr codes snake inputs stickers printing">
+        <h3>Audio labels and QR codes</h3>
+        <p>How to print labels for your snake inputs with QR codes that link to PatchFlow.</p>
+        <a href="#audio" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Copying the briefing" data-tags="briefing copy changes share" data-content="plain text change summary slack text message">
+        <h3>Copying the briefing</h3>
+        <p>How to copy a plain-text change summary to share with your team via Slack or text.</p>
+        <a href="#audio" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="lighting" id="lighting">
+    <h2>Lighting</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Setting up your lighting patch" data-tags="lighting fixtures DMX universe" data-content="dmx addresses universes channels">
+        <h3>Setting up your lighting patch</h3>
+        <p>How to add fixtures, assign DMX addresses, and organize universes.</p>
+        <a href="#lighting" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="The lighting plot" data-tags="lighting plot fixtures layout" data-content="stage plot visual layout positions">
+        <h3>The lighting plot</h3>
+        <p>How to place fixtures on the stage plot and read the visual layout.</p>
+        <a href="#lighting" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="stage" id="stage">
+    <h2>Stage</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Setting up your stage layout" data-tags="stage layout instruments plot" data-content="infrastructure stage canvas">
+        <h3>Setting up your stage layout</h3>
+        <p>How to place instruments and infrastructure on the stage canvas.</p>
+        <a href="#stage" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Connecting stage positions to your patch" data-tags="stage connections cables patch" data-content="positions audio inputs cable routing">
+        <h3>Connecting stage positions to your patch</h3>
+        <p>How to link stage positions to audio inputs and see cable routing.</p>
+        <a href="#stage" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="network" id="network">
+    <h2>Network</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="The network reference page" data-tags="network IP devices reference" data-content="ip addresses subnets device information">
+        <h3>The network reference page</h3>
+        <p>How to document IP addresses, subnets, and device information for your entire network.</p>
+        <a href="#network" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Adding devices to your network" data-tags="network devices add" data-content="manual producer computers network switches">
+        <h3>Adding devices to your network</h3>
+        <p>How to add manually documented devices like producer computers and network switches.</p>
+        <a href="#network" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="equipment" id="equipment">
+    <h2>Equipment</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Reporting equipment issues" data-tags="equipment issues workaround" data-content="report known issue broken gear">
+        <h3>Reporting equipment issues</h3>
+        <p>How to report a known issue with a piece of gear so your team is aware.</p>
+        <a href="#equipment" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Patch checkpoints" data-tags="checkpoint restore backup" data-content="save restore master patch state accidental changes undo">
+        <h3>Patch checkpoints</h3>
+        <p>How to save and restore your master patch state in case of accidental changes.</p>
+        <a href="#equipment" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Equipment photos" data-tags="photos equipment reference" data-content="attach reference photo input fixture device image picture">
+        <h3>Equipment photos</h3>
+        <p>How to attach a reference photo to an input, fixture, or device.</p>
+        <a href="#equipment" class="read-more">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-section" data-section="account" id="account">
+    <h2>Account and settings</h2>
+    <div class="article-grid">
+      <div class="help-article" data-title="Changing your workspace type" data-tags="workspace settings type" data-content="church touring production company">
+        <h3>Changing your workspace type</h3>
+        <p>How to change between Church, Touring, Production Company, and other workspace types.</p>
+        <a href="#account" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article" data-title="Managing your team" data-tags="team roles invite remove" data-content="invite members change roles remove people organization">
+        <h3>Managing your team</h3>
+        <p>How to invite members, change roles, and remove people from your organization.</p>
+        <a href="#account" class="read-more">Learn more →</a>
+      </div>
+      <div class="help-article contact-card" data-title="Still have questions?" data-tags="contact support help email" data-content="hello@patchflow.io contact us support">
+        <h3>Still have questions?</h3>
+        <p>Contact us at hello@patchflow.io</p>
+        <a href="mailto:hello@patchflow.io" class="read-more">Email us →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="no-results wrap" id="no-results" role="status" hidden>
+  <p>No articles found for “<span id="search-term"></span>”</p>
+  <p>Try different keywords or <a href="mailto:hello@patchflow.io">contact us</a>.</p>
+</div>
+
+<footer><div class="wrap footer-inner"><a class="brand" href="/" aria-label="PatchFlow home"><img class="product-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NjIuODggMTc1LjM5Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjM2I4MmY2OwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CiAgICA8Zz4KICAgICAgPGc+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzQ1Ljc1LDczLjE4YzAsMjQuNTEtMTYuNTYsNDAuMjYtNDIuMzcsNDAuMjZoLTMxdjMzLjI4aC0yMi40VjMzLjA4aDUzLjRjMjUuODEsMCw0Mi4zNywxNS43NSw0Mi4zNyw0MC4wOVpNMzIzLjE5LDczLjM0YzAtMTIuMTctOC4xMi0xOS45Ny0yMC43OC0xOS45N2gtMzAuMTl2MzkuOTNoMzAuMTljMTIuNjYsMCwyMC43OC03Ljc5LDIwLjc4LTE5Ljk3WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQyOC4zNyw2Ni41MnY4MC4xOWgtMTguNjdsLTEuNDYtOS43NGMtNi42Niw3LjQ3LTE2LjQsMTEuNTItMjcuNzYsMTEuNTItMjMuMDUsMC0zOC45Ni0xNy4yMS0zOC45Ni00MS44OHMxNS45MS00MS44OCwzOC45Ni00MS44OGMxMS4zNiwwLDIxLjI2LDQuMDYsMjcuNzYsMTEuMzZsMS40Ni05LjU4aDE4LjY3Wk00MDYuOTQsMTA2LjYyYzAtMTMuNDctOS4wOS0yMy4wNS0yMi4wOC0yMy4wNXMtMjEuOTEsOS41OC0yMS45MSwyMy4wNSw5LjA5LDIzLjA1LDIxLjkxLDIzLjA1LDIyLjA4LTkuNTgsMjIuMDgtMjMuMDVaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDkyLjk3LDE0My43OWMtNi42NiwzLjA4LTEyLjUsNC4yMi0xOS42NCw0LjIyLTE2LjM5LDAtMjcuMjctOC43Ni0yNy4yNy0yOS43MXYtMzQuMDloLTE0LjQ1di0xNy42OWgxNC40NXYtMjAuNDVsMjEuNDMtMi4yN3YyMi43M2gyMS41OXYxNy42OWgtMjEuNTl2MzQuMDljMCw3LjMsMy43MywxMS4wNCwxMC4yMywxMS4wNCwzLjA4LDAsNi44Mi0uOTcsOS41OC0yLjI3bDUuNjgsMTYuNzJaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDg4LjkxLDEwNi42MmMwLTI1LDE3LjM3LTQxLjg4LDQzLjE4LTQxLjg4LDExLjg1LDAsMjIuMjQsNC4yMiwzMC44NCwxMi41bC0xMi41LDEzLjQ3Yy00LjU1LTQuNTQtMTAuODgtNy4xNC0xNy41My03LjE0LTEzLjMxLDAtMjIuNTYsOS40MS0yMi41NiwyMy4wNXM5LjA5LDIzLjA1LDIyLjU2LDIzLjA1YzcuMTQsMCwxMy42NC0yLjc2LDE4LjUtNy43OWwxMi42NiwxMy42NGMtOS4wOSw4Ljc2LTE5LjMyLDEyLjk5LTMxLjY1LDEyLjk5LTI2LjQ2LDAtNDMuNS0xNi4zOS00My41LTQxLjg4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY0Ni4yLDEwMS45MXY0NC44aC0yMS41OXYtNDMuNWMwLTEyLjM0LTYuMzMtMTkuNDgtMTcuMDQtMTkuNDgtMTEuODUsMC0xOS44LDguNDQtMTkuOCwyMC43OHY0Mi4yaC0yMS41OVYzMy4wOGgyMS41OXY0Mi41M2M2LjE3LTYuOTgsMTQuNjEtMTAuNzEsMjUuMTYtMTAuNzEsMjAuNDUsMCwzMy4yOCwxNC40NSwzMy4yOCwzNy4wMVoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02NjYuOTcsNDQuOTN2NDEuODhoNjEuMnYxMS42OWgtNjEuMnY0OC4yMWgtMTIuNVYzMy4wOGg3Ny4xdjExLjg1aC02NC42WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTczOS44NSwzMy4wOGgxMi4wMXYxMTMuNjNoLTEyLjAxVjMzLjA4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc1OSwxMDYuNjJjMC0yMy44NiwxNi44OC00MS43Miw0MS44OC00MS43MnM0MS43MiwxNy44Niw0MS43Miw0MS43Mi0xNi43Miw0MS43Mi00MS43Miw0MS43Mi00MS44OC0xNy44Ni00MS44OC00MS43MlpNODMwLjU5LDEwNi42MmMwLTE3LjA0LTEyLjAxLTMwLjUyLTI5LjcxLTMwLjUycy0yOS44NywxMy40Ny0yOS44NywzMC41MiwxMi4wMSwzMC41MiwyOS44NywzMC41MiwyOS43MS0xMy40NywyOS43MS0zMC41MloiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05NjIuODgsNjYuNTJsLTI3LjExLDgwLjE5aC0xMy4xNWwtNy43OS0yMy4yMS0xNC4xMi0zOS42MS0xNC4xMiwzOS42MS03Ljk1LDIzLjIxaC0xMy4xNWwtMjcuMjctODAuMTloMTIuODJsMTAuMjMsMzEuODIsMTAuODgsMzQuNDEsMjMuMjEtNjYuMjNoMTAuNTVsMjMuMDUsNjYuMzksMTEuMDQtMzQuNTcsMTAuMjMtMzEuODJoMTIuNjZaIi8+CiAgICAgIDwvZz4KICAgICAgPGc+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ4LjcxLDBIMjYuNjhDMTEuOTUsMCwwLDExLjk1LDAsMjYuNjh2MTIyLjAzYzAsMTQuNzQsMTEuOTUsMjYuNjgsMjYuNjgsMjYuNjhoMTIyLjAzYzE0Ljc0LDAsMjYuNjgtMTEuOTUsMjYuNjgtMjYuNjhWMjYuNjhjMC0xNC43NC0xMS45NS0yNi42OC0yNi42OC0yNi42OFpNMTExLjM1LDExNS43M2MtLjI0LDAtLjQ4LDAtLjcyLDBoLTIxLjE0Yy0xLjAyLDAtMS44NC44My0xLjg0LDEuODR2MjcuODJjMCwxLjAzLS44NCwxLjg2LTEuODcsMS44NmgtMjEuOTdjLTE3LjUxLDAtMzEuOTQtMTQuMDYtMzEuOTQtMzEuNDd2LS4wNXMwLTUzLjMxLDAtNTMuMzFjMC0xLjAzLjg0LTEuODYsMS44Ny0xLjg2aDI4LjAzYzEuMDIsMCwxLjg0LS44MywxLjg0LTEuODR2LTI3LjgyYzAtMS4wMy44My0xLjg2LDEuODYtMS44Nmg0NS4xNWMuMjQsMCwuNDgsMCwuNzIsMCwyMy42MS4zOSw0Mi42MiwxOS42NCw0Mi42Miw0My4zNHMtMTkuMDIsNDIuOTYtNDIuNjIsNDMuMzRaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTA4LjY5LDYwLjU4Yy0uMDgtLjAxLS4xNi0uMDEtLjIzLS4wMi01LjIxLS4wNi0zNC40OS4wMy00Mi45OS4wMS0uMDUsMC0uMSwwLS4xNCwwLS45NC4wNC0xLjcuNzktMS43NiwxLjczLDAsLjA0LDAsLjA5LDAsLjEzdjUxLjQ1YzAsMS4wMy44NCwxLjg2LDEuODcsMS44NmgyMC40MWMuOTIsMCwxLjY5LS42OCwxLjgyLTEuNTZoMGMtLjAyLS4xLS4wMy0uMi0uMDMtLjN2LTI3LjU5YzAtMS4wMy44My0xLjg2LDEuODYtMS44NmgxNS45MmMuMDcsMCwuMTQuMDEuMjEuMDEsNi45OC0uMjMsMTMuMzMtNC45NCwxMy4zNC0xMi4wNSwwLTYuMDMtNC40Ny0xMS4wMS0xMC4yOS0xMS44MVoiLz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="PatchFlow" width="158" height="29"></a><div class="footer-right"><p>Still need help? <a href="mailto:hello@patchflow.io">hello@patchflow.io</a></p><div class="footer-links"><a href="https://app.patchflow.io/privacy">Privacy</a><a href="https://app.patchflow.io/terms">Terms</a><a href="/">Home</a></div></div></div></footer>
+
+<script>
+const searchInput = document.getElementById('help-search')
+const clearBtn = document.getElementById('clear-search')
+const noResults = document.getElementById('no-results')
+const searchTerm = document.getElementById('search-term')
+const articles = document.querySelectorAll('.help-article')
+const sections = document.querySelectorAll('.help-section')
+
+// Each article's searchable text: title, tags, extra keywords, and visible copy.
+const haystacks = new Map()
+articles.forEach(article => {
+  const d = article.dataset
+  haystacks.set(article, [d.title, d.tags, d.content, article.textContent]
+    .join(' ').toLowerCase())
+})
+
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase().trim()
+
+  clearBtn.style.display = query ? 'block' : 'none'
+
+  if (!query) {
+    articles.forEach(a => a.hidden = false)
+    sections.forEach(s => s.hidden = false)
+    noResults.hidden = true
+    return
+  }
+
+  // Every word must appear somewhere, so "import pdf" finds the import guide.
+  const words = query.split(/\s+/)
+  let visibleCount = 0
+
+  articles.forEach(article => {
+    const text = haystacks.get(article)
+    const matches = words.every(w => text.includes(w))
+    article.hidden = !matches
+    if (matches) visibleCount++
+  })
+
+  // Hide empty sections
+  sections.forEach(section => {
+    const visible = section.querySelectorAll(
+      '.help-article:not([hidden])').length
+    section.hidden = visible === 0
+  })
+
+  noResults.hidden = visibleCount > 0
+  searchTerm.textContent = searchInput.value.trim()
+})
+
+clearBtn.addEventListener('click', function() {
+  searchInput.value = ''
+  searchInput.dispatchEvent(new Event('input'))
+  searchInput.focus()
+})
+
+searchInput.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && this.value) {
+    e.preventDefault()
+    clearBtn.click()
+  }
+})
+</script>
+</body>
+</html>
