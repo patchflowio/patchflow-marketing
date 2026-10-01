@@ -77,6 +77,7 @@ input[type="text"],input[type="email"],select{
   font-size:15px;appearance:none;-webkit-appearance:none;
 }
 input::placeholder{color:var(--muted)}
+select:disabled{opacity:.55;cursor:not-allowed}
 select{
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 14px center;padding-right:40px;
@@ -159,27 +160,19 @@ footer{border-top:1px solid var(--line);padding:35px 0;margin-top:auto}
             <input type="text" id="church_org" name="church_org" autocomplete="organization" required placeholder="Christ Fellowship">
           </div>
           <div class="field">
-            <label for="role">Role <span class="hint">(optional)</span></label>
-            <select id="role" name="role">
-              <option value="">Select your role...</option>
-              <optgroup label="Church">
-                <option value="Technical Director">Technical Director</option>
-                <option value="Production Director">Production Director</option>
-                <option value="Audio Engineer">Audio Engineer</option>
-                <option value="Lighting Director">Lighting Director</option>
-                <option value="Video Director">Video Director</option>
-                <option value="Volunteer">Volunteer</option>
-              </optgroup>
-              <optgroup label="Touring & Events">
-                <option value="FOH Engineer">FOH Engineer</option>
-                <option value="Production Manager">Production Manager</option>
-                <option value="Tour Manager">Tour Manager</option>
-                <option value="LD">Lighting Designer</option>
-              </optgroup>
-              <optgroup label="Other">
-                <option value="Production Company">Production Company Owner</option>
-                <option value="Other">Other</option>
-              </optgroup>
+            <label for="org_type">Organization type <span class="hint">(optional)</span></label>
+            <select id="org_type" name="org_type">
+              <option value="">Select organization type...</option>
+              <option value="Church">Church</option>
+              <option value="Touring & Events">Touring &amp; Events</option>
+              <option value="Production Company">Production Company</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="role">Title <span class="hint">(optional)</span></label>
+            <select id="role" name="role" disabled>
+              <option value="">Select an organization type first</option>
             </select>
           </div>
           <label class="terms">
@@ -270,6 +263,32 @@ document.addEventListener('keydown', function(e) {
 const SUPABASE_URL = 'https://mwlkwhjychrnidohhatx.supabase.co'
 const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im13bGt3aGp5Y2hybmlkb2hoYXR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU4NTk2NjQsImV4cCI6MjA5MTQzNTY2NH0.VJwwo7QeUjk0rAeQxWIOT0gFFoLZEPMVphEVP3FvtiQ'
 
+const ROLE_OPTIONS = {
+  'Church': ['Technical Director', 'Production Director', 'Audio Engineer', 'Lighting Director', 'Video Director', 'Volunteer', 'Other'],
+  'Touring & Events': ['FOH Engineer', 'Monitor Engineer', 'Production Manager', 'Tour Manager', 'Lighting Designer', 'Other'],
+  'Production Company': ['Owner', 'Production Manager', 'Technician', 'Other'],
+  'Other': ['Owner', 'Technician', 'Volunteer', 'Other'],
+}
+
+const orgTypeSelect = document.getElementById('org_type')
+const roleSelect = document.getElementById('role')
+
+orgTypeSelect.addEventListener('change', () => {
+  const titles = ROLE_OPTIONS[orgTypeSelect.value] || []
+  roleSelect.innerHTML = ''
+  const placeholder = document.createElement('option')
+  placeholder.value = ''
+  placeholder.textContent = titles.length ? 'Select your title...' : 'Select an organization type first'
+  roleSelect.appendChild(placeholder)
+  titles.forEach((title) => {
+    const opt = document.createElement('option')
+    opt.value = title
+    opt.textContent = title
+    roleSelect.appendChild(opt)
+  })
+  roleSelect.disabled = !titles.length
+})
+
 const form = document.getElementById('waitlist-form')
 const errorEl = document.getElementById('error')
 const successEl = document.getElementById('success')
@@ -337,7 +356,10 @@ form.addEventListener('submit', async (e) => {
   const full_name = document.getElementById('full_name').value.trim()
   const email = document.getElementById('email').value.trim()
   const church_org = document.getElementById('church_org').value.trim()
-  const role = document.getElementById('role').value.trim()
+  const org_type = orgTypeSelect.value
+  const title = roleSelect.value
+  // Stored in the single role column as "Org type · Title"
+  const role = [org_type, title].filter(Boolean).join(' · ')
   const agreed = document.getElementById('terms').checked
 
   if (!full_name || !email || !church_org) {
